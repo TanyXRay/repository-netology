@@ -1,7 +1,7 @@
 public class SalesManager {
-    protected int[] sales;
+    protected long[] sales;
 
-    public SalesManager(int[] sales) {
+    public SalesManager(long[] sales) {
         this.sales = sales;
     }
 
@@ -9,9 +9,9 @@ public class SalesManager {
      * Данный метод возвращает максимальное значение по продажам.
      * @return long max (максимальное значение).
      */
-    public int max() {
-        int max = -1;
-        for (int sale : sales) {
+    public long max() {
+        long max = -1;
+        for (long sale : sales) {
             if (sale > max) {
                 max = sale;
             }
@@ -21,12 +21,12 @@ public class SalesManager {
 
     /**
      * Данный метод вычисляет среднее значение по продажам, за исключением max и min значений.
-     * @return  int mean (среднее значение).
+     * @return  long mean (среднее значение).
      */
-    public int averageSalesValue() {
-        int sum = 0;
-        int min = sales[0];
-        for (int sale : sales) {
+    public long averageSalesValue() {
+        long sum = 0;
+        long min = sales[0];
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
