@@ -4,5 +4,6 @@ public class Main {
         SalesManager first = new SalesManager(new long[]{10, 500, 64, 79,945});
 
         first.max();
+        first.averageSalesValue();
     }
 }
