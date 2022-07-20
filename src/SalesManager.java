@@ -21,7 +21,7 @@ public class SalesManager {
 
     /**
      * Данный метод вычисляет среднее значение по продажам, за исключением max и min значений.
-     * @return  long mean (среднее значение).
+     * @return  long min (среднее значение).
      */
     public long averageSalesValue() {
         long sum = 0;
